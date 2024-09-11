@@ -30,26 +30,25 @@ This builds neovim, installs it to ~/neovim/bin and adds the directory to the PA
 
 ## General folder structure
 We consider the following folder structure:
-├──  init.lua
-├──  lua
-│ ├──  settings.lua
-│ ├──  keymappings.lua
-│ ├──  plugins 
-│ │ └──  telescope.lua
-│ ├──  language-servers
-│ │ ├──  css.lua
-│ │ ├──  html.lua
-│ │ ├──  init.lua
-│ │ ├──  json.lua
-│ │ ├──  luals.lua
-│ │ ├──  python.lua
-│ │ ├──  typescript.lua
-│ │ └──  vue.lua
-│ ├──  load-plugins.lua
-│ ├──  telescope-settings.lua
-│ └──  treesitter-settings.lua
-├──  README.md
-
+```
+├── init.lua
+├── lua
+│ ├── settings.lua
+│ ├── keymappings.lua
+│ ├── plugins 
+│ │ └── telescope-settings.lua
+│ ├── language-servers
+│ │ ├── css.lua
+│ │ ├── html.lua
+│ │ ├── init.lua
+│ │ ├── json.lua
+│ │ ├── luals.lua
+│ │ ├── python.lua
+│ │ ├── typescript.lua
+│ │ └── vue.lua
+│ └── load-plugins.lua
+├── README.md
+```
 ## Plugin manager
 Before starting further configuration install packer
 ```bash
