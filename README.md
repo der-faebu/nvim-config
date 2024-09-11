@@ -10,6 +10,10 @@ Additionally, as of version 0.10 of Neovim, the following packages are required 
 - curl
 - build-essential
 
+```bash
+sudo apt update && sudo apt install -y git cmake gettext unzip curl build-essential
+```
+
 ## Building nvim from source
 ### General
 As many plugins require a relatively new version of neovim, we build it directly from the source.
