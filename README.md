@@ -28,6 +28,11 @@ export PATH="$HOME/neovim/bin:$PATH"
 ```
 This builds neovim, installs it to ~/neovim/bin and adds the directory to the PATH.
 
+## Cloning the settings repo
+```bash
+mkdir -p ~/.config/nvim && git clone https://github.com/der-faebu/nvim-config ~/.config/nvim
+```
+
 ## General folder structure
 We consider the following folder structure:
 ```
@@ -50,9 +55,8 @@ We consider the following folder structure:
 ├── README.md
 ```
 ## Plugin manager
-Before starting further configuration install packer
+Before starting further configuration we need to install packer
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-
