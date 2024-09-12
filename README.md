@@ -10,6 +10,10 @@ Additionally, as of version 0.10 of Neovim, the following packages are required 
 - curl
 - build-essential
 
+```bash
+sudo apt update && sudo apt install -y git cmake gettext unzip curl build-essential
+```
+
 ## Building nvim from source
 ### General
 As many plugins require a relatively new version of neovim, we build it directly from the source.
@@ -22,8 +26,8 @@ git clone https://github.com/neovim/neovim && cd neovim && git checkout release-
 ```
 2. Build as release
 ```bash
-make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
-make install
+make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim" && \
+make install && \
 export PATH="$HOME/neovim/bin:$PATH"
 ```
 This builds neovim, installs it to ~/neovim/bin and adds the directory to the PATH.
