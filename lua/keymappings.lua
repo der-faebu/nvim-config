@@ -7,4 +7,4 @@ vim.keymap.set("n", "<C-U>", "<C-U>zz")
 vim.keymap.set("n","n", "nzzzv") 
 vim.keymap.set("n","N", "Nzzzv") 
 vim.keymap.set("n","<leader>w", "<C-w><C-w>")
-
+vim.keymap.set("n","<leader>q", ":q<CR>")
