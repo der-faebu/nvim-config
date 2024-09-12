@@ -121,8 +121,8 @@ N   last result
 
 *   next Occurrence of current word
 \#  last Occurrence of current word
-
 ### Insert mode
 ### Visual mode
-vi' select between ''
-viB select between {}
+vi' select between '' (select inner sigle quotes) also works for "
+viB select between {} (select inner braces)
+vib select between () (select inner block)
