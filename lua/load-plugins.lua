@@ -10,7 +10,6 @@ return require('packer').startup( function(use)
   use 'folke/tokyonight.nvim'
   use 'theprimeagen/harpoon' 
   use "nvim-lua/plenary.nvim" 
-  use 'nvim-treesitter/playground' 
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.8',
   requires = { {'nvim-lua/plenary.nvim'} }
