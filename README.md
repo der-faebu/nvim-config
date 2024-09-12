@@ -71,3 +71,58 @@ Open nvim and type
 :PackerSync
 ```
 Quit and reopen nvim et voilà.
+
+# Useful shorthand
+## Vim docs
+### General
+Buffer: visual representation of in-memory stuff
+- a buffer can be opened in multiple Windows
+Window: contains buffers
+
+### Movements
+#### Basic motions
+v	highlight
+V	highlight line
+d	delete (to register) requiring motion
+x	delete (to register) not requiring motion
+c	change (delete to register) requirng motion and go to insert
+y	yank (to register)
+o   new line below and go to insert
+O   new line above and go to insert
+
+_	to the first character on the line
+0	to the beginning of the line
+$	to the last character of the line
+f <char>	on next <char> 
+    <motion>f<char>	motion including <char>
+        df<char>	delete including <char>
+F <char>	on last <char> (reverse)
+t <char>	in front of next <char> 
+    <motion>t<char>	motion excluding <char>
+        dt<char>	delete excluding <char>
+dt<char> delete excluding <char>
+
+T <char>	behind last <char> (reverse) 
+;	next occurence of <char>
+,	last <char>
+
+#### Advanced motions
+{   go down one paragraph
+}   go up one paragraph
+
+Ctrl+d  Jump half page down
+Ctrl+u  Jump half page up
+zz  Place cursor in the center of page
+
+/   Forward search for term
+?   Backwards search for term
+n   next result
+N   last result
+
+*   next Occurrence of current word
+\#  last Occurrence of current word
+
+### Insert mode
+### Visual mode
+vi' select between ''
+viB select between {}
