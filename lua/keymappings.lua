@@ -8,3 +8,5 @@ vim.keymap.set("n","n", "nzzzv")
 vim.keymap.set("n","N", "Nzzzv") 
 vim.keymap.set("n","<leader>w", "<C-w><C-w>")
 vim.keymap.set("n","<leader>q", ":q<CR>")
+
+vim.keymap.set("n","<leader>pw",":lua print(require('window-picker').pick_window())<CR>")
