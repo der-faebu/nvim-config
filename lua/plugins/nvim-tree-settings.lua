@@ -22,4 +22,9 @@ require("nvim-tree").setup {
   ---
   on_attach = my_on_attach,
   ---
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 500,
+  },
 }
