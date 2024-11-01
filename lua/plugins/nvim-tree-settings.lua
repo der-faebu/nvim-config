@@ -20,6 +20,7 @@ end
 -- pass to setup along with your other options
 require("nvim-tree").setup {
   ---
+  sync_root_with_cwd = false,
   on_attach = my_on_attach,
   ---
   git = {
